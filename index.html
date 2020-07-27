@@ -1,0 +1,101 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-20 14:20:23
+ * @LastEditTime: 2020-04-06 15:56:54
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \myNotes\H5C3\案例\孕育宝典\index.html
+ -->
+
+<!-- 数据渲染、文章收藏（本地存储）、页面切换 -->
+ <!-- 技术栈：ajax zepto iscroll 移动端适配rem -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1703841_puq7d638at.css">
+    <script src="./js/font.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="" class="header-left" id="return"><i class="iconfont icon-zuojiantou"></i></a>
+            <h1 class="header-title">孕育宝典</h1>
+            <a class="header-right"><i class="iconfont icon-fav-1"></i></a>
+        </header>
+        <section>
+            <div class="home" id="home">
+                <div>
+                    <a href="#list" title="孕前知识" id="yunqian">
+                        <img src="./img/pic1.png" alt="">
+                    </a>
+                    <a href="#list" title="孕中知识" id="yunzhong">
+                        <img src="./img/pic2.png" alt="">
+                    </a>
+                    <a href="#list" title="产前知识" id="chanqian">
+                        <img src="./img/pic3.png" alt="">
+                    </a>
+                    <a href="#list" title="分娩产后" id="chanhou">
+                        <img src="./img/pic4.png" alt="">
+                    </a>
+                    <a href="#list" title="幼儿成长指标" id="chengzhang">
+                        <img src="./img/pic5.png" alt="">
+                    </a>
+                    <a href="#list" title="幼儿常见病防治" id="fangzhi">
+                        <img src="./img/pic6.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="list" class="list">
+                <div class="listIscroll" id="listIscroll">      
+                <!-- <a href="">
+                    <img src="./img/tu/0.jpg" alt="">
+                    <p>不可忽略的备孕事项</p>
+                </a> -->
+            </div>
+            </div>
+            <div id="article">
+                <div class="article-content">
+                    内容-文章详情内容-文章详情内容-文章详情内容-文章详情
+                </div>
+                
+            </div>
+            <div id="favorite"></div>
+            <div id="history">历史</div>
+            <div id="config">设置</div>
+        </section>
+        <footer>
+            <nav>
+                <a href="#home">
+                    <span>首页</span>
+                    <p>home</p>
+                </a>
+                <a href="#favorite">
+                    <span>收藏</span>
+                    <p>favorite</p>
+                </a>
+                <a href="#history">
+                    <span>历史</span>
+                    <p>history</p>
+                </a>
+                <a href="#config">
+                    <span>设置</span>
+                    <p>config</p>
+                </a>
+            </nav>
+            <mark></mark>
+        </footer>
+    </div>
+
+    <script src="./js/iscroll.js"></script>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/touch.js"></script>
+    <script src="./js/fx.js"></script>
+    <script src="./js/fastclick.js"></script>
+    <!-- 解决移动端300ms延迟问题 -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
