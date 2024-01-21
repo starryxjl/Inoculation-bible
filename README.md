@@ -1,2 +1,2 @@
 # Inoculation-bible
-A bible for breed
+这是在学习前端的时候过的一个项目
